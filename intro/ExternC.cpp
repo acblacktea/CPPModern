@@ -8,9 +8,9 @@ namespace A
 extern "C" int h() { return 97; } // definition for the C linkage function h
 // A::h and ::h refer to the same function
 
-int main() {
+
+void externCTest() {
     [out = std::ref(std::cout << "result from c code: " << add(1, 2))]() {
         out.get() << ".\n";
     }();
-    return 0;
 }

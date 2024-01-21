@@ -7,13 +7,13 @@
 
 
 #ifdef __cplusplus
-extern "C" {
+//extern "C" {
 #endif
 
     int add(int x, int y);
 
 #ifdef __cplusplus
-}
+//}
 #endif
 
 #endif //MODERNCPP_FOO_H
